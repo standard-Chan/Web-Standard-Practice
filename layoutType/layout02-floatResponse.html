@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>response layout type 01</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #fff3e0;
+    }
+    #wrap {
+      width: 1200px;
+      margin: 0 auto;
+    }
+    /* 최상위만 크기를 남기고 나머지는 %로 채운다. */
+    #header {
+      width: 100%;
+      height: 100px;
+      background-color: #ffe082;
+    }
+    #nav {
+      width: 100%;
+      height: 100px;
+      background-color: #ffb74d;
+    }
+    #aside {
+      width: 30%;
+      height: 780px;
+      background-color: #ffa726;
+      float : left;
+    }
+    #section {
+      width: 70%;
+      height: 780px;
+      background-color: #ff9800;
+      float : left;
+    }
+    #footer {
+      width: 100%;
+      height: 100px;
+      background-color: #ffb74d;
+      clear: both;
+    }
+
+    /* 미디어 쿼리 */
+    /* screen size에 따라 css 적용*/
+
+    /* PC */
+    /* max-width를 실제 크기보다 약간 크게하는게 좋음 => 스크롤바 방지 */
+    @media (max-width: 1220px) {
+      #wrap {
+        /* size가 작아짐에 따라서 약간의 여백을 주기 위함 */
+      width: 96%;
+      }
+    }
+
+    /* 태블릿 */
+    @media (max-width: 768px) {
+      #wrap {
+        /* 완전히 작아졌을 때, 100% 태블릿 사이즈 */
+      width: 100%;
+      }
+    }
+
+    /* 모바일 */
+    @media (max-width: 480px) {
+      #aside {
+        width: 100%;
+        height: 300px;
+      }
+      #section {
+        width: 100%;
+        height: 480px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <div id="header"></div>
+    <div id="nav"></div>
+    <div id="aside"></div>
+    <div id="section"></div>
+    <div id="footer"></div>
+  </div>
+  
+</body>
+</html>
