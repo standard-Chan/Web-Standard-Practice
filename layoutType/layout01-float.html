@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>float layout type 01</title>
+  <style>
+    * {
+      /* 간격 없애기 위함 */
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #fff3e0;
+    }
+    #wrap {
+      width: 1200px;
+      /* 가운데 정렬 
+         약식 자동으로 margin : 0 auto 0 auto 할당
+      */
+      margin: 0 auto;
+    }
+    #header {
+      width: 1200px;
+      height: 100px;
+      background-color: #ffe082;
+    }
+    #nav {
+      width: 1200px;
+      height: 100px;
+      background-color: #ffb74d;
+    }
+    #aside {
+      width: 400px;
+      height: 780px;
+      background-color: #ffa726;
+      /* 최근에는 안쓰는 방법 float. 띄워서 왼쪽에 놓는다
+         본래 기능은 이미지와 글씨를 정렬시킬 때 사용한다.
+         height = 0으로 된다.
+      */
+      float : left;
+    }
+    #section {
+      width: 800px;
+      height: 780px;
+      background-color: #ff9800;
+      float : left;
+    }
+    #footer {
+      width: 1200px;
+      height: 100px;
+      background-color: #ffb74d;
+      /* floating 되는 걸 막는 기능. 해당 기능으로만 사용한다. */
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <div id="header"></div>
+    <div id="nav"></div>
+    <div id="aside"></div>
+    <div id="section"></div>
+    <div id="footer"></div>
+  </div>
+  
+</body>
+</html>
