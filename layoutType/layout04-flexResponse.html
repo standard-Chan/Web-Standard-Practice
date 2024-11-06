@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex layout</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #fff3e0;
+    }
+    #wrap {
+      width: 1200px;
+      margin: 0 auto;
+      /* flex */
+      display: flex;
+      flex-wrap: wrap;
+      /* 
+      nowrap : default. 아이템이 다음줄로 넘어가지 않음. 대신 요소의 너비를 줄여서 한 줄에 배치.
+      wrap : 플렉스 공간에 여유가 없으면 다음 줄로 넘김.
+      */
+    }
+    #header {
+      width: 100%;
+      height: 100px;
+      background-color: #ffe082;
+    }
+    #nav {
+      width: 100%;
+      height: 100px;
+      background-color: #ffb74d;
+    }
+    #aside {
+      width: 30%;
+      height: 780px;
+      background-color: #ffa726;
+    }
+    #section {
+      width: 70%;
+      height: 780px;
+      background-color: #ff9800;
+    }
+    #footer {
+      width: 100%;
+      height: 100px;
+      background-color: #ffb74d;
+    }
+
+    /* 미디어 쿼리 */
+    /* screen size에 따라 css 적용*/
+
+    /* PC */
+    @media (max-width: 1220px) {
+      #wrap {
+        width: 96%;
+      }
+    }
+
+    /* 태블릿 */
+    @media (max-width: 768px) {
+      #wrap {
+        width: 100%;
+      }
+    }
+
+    /* 모바일 */
+    @media (max-width: 480px) {
+      #aside {
+        width: 100%;
+        height: 300px;
+      }
+      #section {
+        width: 100%;
+        height: 480px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <header id="header"></header>
+    <nav id="nav"></nav>
+    <aside id="aside"></aside>
+    <section id="section"></section>
+    <footer id="footer"></footer>
+  </div>
+  
+</body>
+</html>
