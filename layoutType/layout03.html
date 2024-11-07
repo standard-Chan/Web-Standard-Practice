@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>layout 3</title>
+  <style>
+    *{
+      margin: 0 auto;
+    }
+    #wrap {
+      width: 100%;
+    }
+    #header {
+      height: 100px;
+      background-color: #9ed5c5;
+    }
+    #nav {
+      height: 300px;
+      background-color: #4bb696;
+
+    }
+    #section {
+      height: 580px;
+      background-color: #259f7a;
+    }
+    #footer {
+      height: 100px;
+      background-color: #078b63;
+    }
+    .container {
+      margin: 0 auto;
+      width: 1200px;
+      height: inherit;
+      background-color: #3faaaa5f;
+    }
+
+    @media (max-width: 1300px) {
+      .container {
+        width: 96%;
+      }
+    }
+    @media (max-width: 768px) {
+      .container {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <header id="header">
+      <div class="container"></div>
+    </header>
+    <nav id="nav">
+      <div class="container"></div>
+    </nav>
+    <section id="section">
+      <div class="container"></div>
+    </section>
+    <footer id="footer">
+      <div class="container"></div>
+    </footer>
+  </div>
+</body>
+</html>
