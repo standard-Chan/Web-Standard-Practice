@@ -25,7 +25,7 @@
 학습요소
 
 type 1
-  <img src="./layoutType//typeImg/image-1.png" width="200"/>
+  <img src="./layoutType//typeImg/image-1.png" width="200" height="200"/>
 
  - response
  - float
@@ -38,7 +38,7 @@ type 1
 
 
 type 2
-  <img src="./layoutType//typeImg/image-2.png" width="200"/>  
+  <img src="./layoutType//typeImg/image-2.png" width="200" height="200"/>  
  - float : clearfix 추가하면 문제될 것은 없음
  - flex : 한 블록 안에 가로 세로가 섞여있을 경우, 박스을 세분화 시켜야함. 더욱 복잡해진다. 즉 아래와 같은 그림은 새로운 박스로 묶어야하는 불편함이 있다.
  - grid
