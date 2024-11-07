@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>layout</title>
+  <style>
+    * {
+      margin: 0 auto;
+    }
+    #wrap {
+      width: 1200px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    #header {
+      width: 100%;
+      height: 100px;
+      background-color: #a9dcff;
+    }
+    #nav {
+      width: 100%;
+      height: 100px;
+      background-color: #94d4ff;
+    }
+    #main {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      height: 780px;
+    }
+    #left {
+      width: 25%;
+      height: 780px;
+    }
+    #aside {
+      width: 100%;
+      height: 780px;
+      background-color: #72c6ff;
+    }
+    #right {
+      width: 75%;
+      height: 780px;
+    }
+    #article1 {
+      width: 100%;
+      height: 260px;
+      background-color: #4cb7ff;
+    }
+    #article2 {
+      width: 100%;
+      height: 260px;
+      background-color: #3ba9f1;
+    }
+    #article3 {
+      width: 100%;
+      height: 260px;
+      background-color: #1a97ea;
+    }
+    #footer {
+      width: 100%;
+      height: 100px;
+      background-color: #0188e1;
+    }
+
+
+
+    @media (max-width: 1250px){
+      #wrap {
+        width: 96%;
+      }
+      #right {
+        width: 75%;
+        height: 780px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      #article1 {
+        width: 100%;
+        height: 260px;
+        background-color: #4cb7ff;
+      }
+      #article2 {
+        width: 50%;
+        height: 520px;
+        background-color: #3ba9f1;
+      }
+      #article3 {
+        width: 50%;
+        height: 520px;
+        background-color: #1a97ea;
+      }
+    }
+
+    @media (max-width: 625px){
+      #wrap {
+        width: 100%;
+      }
+      #article3 {
+        width: 50%;
+        height: 520px;
+        background-color: #1a97ea;
+      }
+
+    }
+
+    @media (max-width: 480px){
+      #wrap {
+        width: 100%;
+      }
+      #left {
+        display: none;
+      }
+      #right {
+        width: 100%;
+        height: 780px;
+      }
+      #article1 {
+        width: 100%;
+        height: 250px;
+        background-color: #4cb7ff;
+      }
+      #article2 {
+        width: 100%;
+        height: 280px;
+        background-color: #3ba9f1;
+      }
+      #article3 {
+        width: 100%;
+        height: 250px;
+        background-color: #1a97ea;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <div id="header"></div>
+    <div id="nav"></div>
+    <div id="main">
+      <div id="left">
+        <div id="aside"></div>
+      </div>
+      <div id="right">
+        <div id="article1"></div>
+        <div id="article2"></div>
+        <div id="article3"></div>
+      </div> 
+    </div>
+    <div id="footer"></div>
+  </div>
+</body>
+</html>

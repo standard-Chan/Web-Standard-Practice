@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>layout</title>
+  <style>
+    * {
+      margin: 0 auto;
+    }
+    #wrap {
+      width: 1200px;
+    }
+    #header {
+      width: 100%;
+      height: 100px;
+      background-color: #a9dcff;
+    }
+    #nav {
+      width: 100%;
+      height: 100px;
+      background-color: #94d4ff;
+    }
+    #main {
+      width: 100%;
+    }
+    #aside {
+      width: 25%;
+      height: 780px;
+      background-color: #72c6ff;
+      float: left;
+    }
+    #article1 {
+      width: 75%;
+      height: 260px;
+      background-color: #4cb7ff;
+      float: left;
+    }
+    #article2 {
+      width: 75%;
+      height: 260px;
+      background-color: #3ba9f1;
+      float: left;
+    }
+    #article3 {
+      width: 75%;
+      height: 260px;
+      background-color: #1a97ea;
+      float: left;
+    }
+    #footer {
+      width: 100%;
+      height: 100px;
+      background-color: #0188e1;
+    }
+
+    /* clear fix 로 footer에 clear:both 설정하는 것을 처리*/
+    /* class 로 반복적으로 처리 가능*/
+    .clearfix::before,
+    .clearfix::after {
+      content: '';
+      display: block;
+      line-height: 0;
+    }
+    .clearfix::after {
+      clear:both;
+    }
+
+    @media (max-width: 1250px){
+      #wrap {
+        width: 96%;
+      }
+      #article2 {
+        width: 37.5%;
+        height: 520px;
+      }
+      #article3 {
+        width: 37.5%;
+        height: 520px;
+      }
+    }
+
+    @media (max-width: 625px){
+      #wrap {
+        width: 100%;
+      }
+      #article1 {
+        width: 75%;
+        height: 390px;
+      }
+      #article2 {
+        width: 75%;
+        height: 390px;
+      }
+      #article3 {
+        display: none;
+      }
+    }
+
+    @media (max-width: 480px){
+      #wrap {
+        width: 100%;
+      }
+      #aside {
+        display: none;
+      }
+      #article1 {
+        width: 100%;
+        height: 200px;
+      }
+      #article2 {
+        width: 100%;
+        height: 380px;
+      }
+      #article3 {
+        width: 100%;
+        height: 200px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <div id="header"></div>
+    <div id="nav"></div>
+    <div id="main" class="clearfix">
+      <div id="aside"></div>
+      <div id="article1"></div>
+      <div id="article2"></div>
+      <div id="article3"></div>
+    </div>
+    <div id="footer"></div>
+  </div>
+</body>
+</html>
