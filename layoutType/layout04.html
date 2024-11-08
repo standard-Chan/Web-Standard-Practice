@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>layout 3</title>
+  <style>
+    * {
+      margin: 0 auto;
+    }
+    #wrap {
+      width: 100%;
+    }
+    #header {
+      width: 100%;
+      height: 100px;
+      background-color: #91c284;
+    }
+    #nav {
+      width: 100%;
+      height: 100px;
+      background-color: #71a463;
+    }
+    #main {
+      width: 100%;
+      height: 880px;
+      background-color: #4f8d3e;
+    }
+    #article{
+      display: grid;
+      grid-template-areas: 
+      "article1 article1"
+      "article2 article2"
+      "article3 article4";
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 100px 200px 580px;
+    }
+    #article1 {
+      grid-area: article1;
+      width: 100%;
+      background-color: #00000030
+    }
+    #article2 {
+      grid-area: article2;
+      width: 100%;
+      background-color: #00000060
+    }
+    #article3 {
+      grid-area: article3;
+      width: 100%;
+      background-color: #00000090
+    }
+    #article4 {
+      grid-area: article4;
+      width: 100%;
+      background-color: #000000b0
+    }
+    #footer {
+      width: 100%;
+      height: 100px;
+      background-color: #2d6f1b;
+    }
+    .container{
+      margin: 0 auto;
+      width: 1200px;
+      background-color: #00000030;
+      height:100%;
+    }
+
+    @media (max-width: 1300px) {
+      .container {
+        width: 96%;
+      }
+      #article {
+        grid-template-areas: 
+        "article1 article2 article2"
+        "article1 article3 article4";
+        grid-template-columns: 40% 30% 30%;
+        grid-template-rows: 50% 50%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        width: 100%;
+      }
+      #article {
+        grid-template-areas: 
+        "article1 article2"
+        "article1 article3"
+        "article1 article4";
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 34% 33% 33%;
+      }
+    }
+    @media (max-width: 480px) {
+      #article {
+        grid-template-areas: 
+        "article1"
+        "article2"
+        "article3"
+        "article4";
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 25% 25% 25%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <header id="header">
+      <div class="container"></div>
+    </header>
+    <nav id="nav">
+      <div class="container"></div>
+    </nav>
+    <main id="main">
+      <div id="article" class="container">
+        <div id="article1"></div>
+        <div id="article2"></div>
+        <div id="article3"></div>
+        <div id="article4"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="container"></div>
+    </footer>
+  </div>
+</body>
+</html>

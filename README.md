@@ -31,3 +31,11 @@ type 2
 
 type3
   <img src="./layoutType/typeImg/image-3.png" width="200" height="200"/>  
+
+--------------------------
+
+type4
+  <img src="./layoutType/typeImg/image-4_0.png" width="200" height="200" style="display : inline"/>  
+  <img src="./layoutType/typeImg/image-4_1.png" width="200" height="200" style="display : inline"/>  
+
+--------------------
