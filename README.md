@@ -39,3 +39,8 @@ type4
   <img src="./layoutType/typeImg/image-4_0.png" width="200" height="200" style="display : inline"/>  <img src="./layoutType/typeImg/image-4_1.png" width="200" height="200" style="display : inline"/>  
 
 --------------------
+
+header
+<img src="./headerType/image/image.png" style="display : inline"/>
+ - padding
+ - box-sizing (%와 padding을 동시 사용할 때 고려 )
