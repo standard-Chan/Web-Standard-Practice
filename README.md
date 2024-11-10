@@ -7,8 +7,8 @@
   - [x] Type1
   - [x] Type2
   - [x] Type3
-- [ ] Header
-- [ ] Slide
+- [x] Header
+- [x] Slide
 - [ ] Image
 - [ ] Image/Text
 - [ ] Card
@@ -20,11 +20,13 @@
 학습요소
 
 type 1
+
   <img src="./layoutType/typeImg/image-1.png" width="200" height="200"/>
 
  --------------------
  
 type 2
+
   <img src="./layoutType/typeImg/image-2.png" width="200" height="200"/>  
 
  --------------------------
@@ -40,7 +42,21 @@ type4
 
 --------------------
 
-header
+## header
+
 <img src="./headerType/image/image.png" style="display : inline"/>
+
  - padding
  - box-sizing (%와 padding을 동시 사용할 때 고려 )
+
+
+ ----------------------
+
+ ## slider
+
+ <img src="./sliderType/image/image.png" height="150" style="display : inline"/>
+
+ - transform
+ - position - relative, absolute
+ - top, left, right...
+
