@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>imgText</title>
+  <style>
+      /* font */
+    @import url('https://fonts.googleapis.com/css2?family=Gothic+A1&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+    .font {
+      font-family: "Noto Sans KR", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    *{
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    .blind {
+      width: 0;
+      height: 0;
+      line-height: 0;
+      overflow: hidden;
+      position: absolute;
+      text-indent: -999px;
+    }
+
+    .container {
+      width: 1160px;
+      margin: 0 auto;
+      padding: 0px 20px
+    }
+
+    .section {
+      padding: 120px 0px;
+    }
+
+    .imgText__wrap {
+    }
+    
+    .imgText__inner {
+      display: flex;
+      /* justify content : space-between 양쪽 정렬 */
+      justify-content: space-between;
+      background-color: rgba(85, 233, 215, 0.077);
+      border-radius: 30px;
+      padding: 20px 150px;
+    }
+
+    /* 바로 아래 div 박스 설정 */
+    .imgText__inner > div {
+      width: 32%;
+      height: 400px;
+    }
+    .imgText__txt {
+      padding-left: 15px;
+    }
+    .imgText__txt .small {
+      display: inline-block;
+      font-size: 17px;
+      color: #777;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .imgText__txt .title {
+      font-size: 50px;
+      /* 단어 간격으로 break */
+      word-break: keep-all;
+      /* font 크기의 1.4배 */
+      line-height: 1.2;
+      margin-bottom: 30px;
+    }
+    .imgText__txt .desc {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 15px;
+      line-height: 1.5;
+    }
+    .imgText__txt .list {
+      font-size: 18px;
+      line-height: 1.5;
+      padding-left: 6px;
+    }
+    .imgText__txt .list li {
+      position: relative;
+      margin-bottom: 3px;
+    }
+    .imgText__txt .list li::before{
+      content: '';
+      width: 5px;
+      height: 5px;
+      background-color: #555;
+      position: absolute;
+      border-radius: 5px;
+      left: 5px;
+      top: 10px;
+    }
+    .imgText__txt .list a {
+      color: #555;
+      padding-left: 20px;
+    }
+    .imgText__img {
+      border-radius: 10px;
+      position: relative;
+    }
+    .imgText__img a {
+      background-color: rgb(205, 241, 247);
+      color: black;
+      padding: 7px 30px;
+      border-radius: 20px;
+      font-size: 18px;
+      display: inline-block;
+      position: absolute;
+      left: 30px;
+      bottom: 30px;
+    }
+    .imgText__img.yellow a {
+      background-color: #f9f9db;
+    }
+
+    .imgText__img.img1 {
+      background: url(/imgTextType/image/image4.jpg); 
+      background-size: cover;
+      background-position: center;
+    }
+    .imgText__img.img2 {
+      background: url(/imgTextType/image/image5.jpg); 
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body>
+  <section id="imgTextType" class="imgText__wrap section font">
+  <!-- section tag는 반드시 제목 h1.. h3 등을 넣을 것 -->
+   <h2 class="blind">Image Text</h2>
+   <div class="imgText__inner container">
+    <div class="imgText__txt">
+      <span class="small">숭실대학교</span>
+      <h3 class="title">SSU winter</h3>
+      <p class="desc">숭실대학교 캠퍼스의 겨울을 감상해보세요<br/>
+      각 건물의 이름을 누르면 감상할 수 있습니다</p>
+      <ul class="list">
+        <li><a href="/">정보섬</a></li>
+        <li><a href="/">경상관</a></li>
+        <li><a href="/">베어드홀</a></li>
+        <li><a href="/">중앙도서관</a></li>
+        <li><a href="/">미래관</a></li>
+        <li><a href="/">진리관</a></li>
+      </ul>
+    </div>
+    <div class="imgText__img img1">
+      <a href="/">중앙 도서관</a>
+    </div>
+    <div class="imgText__img img2 yellow">
+      <a href="/">피라미드</a>
+    </div>
+   </div>
+  </section>
+</body>
+</html>

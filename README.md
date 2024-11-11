@@ -60,3 +60,7 @@ type4
  - position - relative, absolute
  - top, left, right...
 
+## text image
+
+ <img src="./imgTextType/image/image.png" height="150" style="display : inline"/>
+
