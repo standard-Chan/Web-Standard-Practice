@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>card type</title>
+  <style>
+    /* fonts */
+    /* reset */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    img {
+      width: 100%;
+    }
+    a {
+      text-decoration: none;
+      color:black
+    }
+    /* common */
+    .section {
+      padding: 120px 0px;
+    }
+    .section > h2 {
+      font-size: 50px;
+      margin-bottom: 20px;
+      text-align: center;
+      line-height: 1;
+      font-weight: 500;
+    }
+    .section > p {
+      font-size: 22px;
+      color: #777;
+      text-align: center;
+      font-weight: 300;
+      margin-bottom: 30px;
+    }
+    .container {
+      width: 1160px;
+      padding: 0;
+      margin: 0 auto;
+    }
+    .ellipsis {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+    /* card type */
+    .card__wrap{
+      width: 100%;
+      height: 500px;
+    }
+    .card__inner {
+      display: flex;
+      justify-content: space-between;
+    }
+    .card {
+      width: 24%;
+      background-color: rgba(188, 214, 229, 0.25);
+      
+    }
+    .card__body {
+      position: relative;
+      padding: 14px 14px;
+      height: 150px;
+    }
+    .card__body .tit{
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+    .card__body .desc {
+      font-size: 16px;
+      line-height: 1.4;
+      color: #666;
+      margin-bottom: 10px;
+    }
+    .card__body .btn {
+      line-height: 1;
+      position: absolute;
+      bottom: 20px;
+    }
+    .card__body .btn .svg {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-40%);
+      margin-left: 10px;
+      width: 15px;
+    }
+  </style>
+</head>
+<body>
+  <section id="cardType" class="card__wrap section">
+    <h2 class="title">숭실대학교의 사계절</h2>
+    <p>
+      숭실대학교의 사계절 캠퍼스를 감상해보세요.
+    </p>
+    <div class="card__inner container">
+      <article class="card">
+        <figure class="card__header">
+          <img src="/imgTextType/image/봄.jpg" alt="image"/>
+        </figure>
+        <div class="card__body">
+          <h3 class="tit">봄</h3>
+          <p class="desc ellipsis">따뜻한 봄이 왔다. 새들은 즐겁게 아침을 노래하고 시냇물은 부드럽게 속삭이며 흐른다. 갑자기 하늘에 검은 구름이 몰려와 번개가 소란을 피운다. 어느덧 구름은 걷히고 다시 아늑한 봄의 분위기 속에 노래가 시작된다.</p>
+          <a class="btn" href="/">자세히 보기
+            <span>
+              <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><path style="fill:#232326" d="m17.5 5.999-.707.707 5.293 5.293H1v1h21.086l-5.294 5.295.707.707L24 12.499l-6.5-6.5z" data-name="Right"/></svg>
+            </span>
+          </a>
+        </div>
+      </article>
+      <article class="card">
+        <figure class="card__header">
+          <img src="/imgTextType/image/여름.jpg" alt="image"/>
+        </figure>
+        <div class="card__body">
+          <h3 class="tit">여름</h3>
+          <p class="desc ellipsis">뜨거운 여름이 다가오면 타는 듯 뜨거운 태양 아래 사람도 양도 모두 지쳐버린다. 느닷없이 북풍이 휘몰아치고 둘레는 불안에 휩싸인다.</p>
+          <a class="btn" href="/">자세히 보기
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><path style="fill:#232326" d="m17.5 5.999-.707.707 5.293 5.293H1v1h21.086l-5.294 5.295.707.707L24 12.499l-6.5-6.5z" data-name="Right"/></svg>
+          </a>
+        </div>
+      </article>
+      <article class="card">
+        <figure class="card__header">
+          <img src="/imgTextType/image/가을.jpg" alt="image"/>
+        </figure>
+        <div class="card__body">
+          <h3 class="tit">가을</h3>
+          <p class="desc ellipsis">농부들이 풍성한 수확의 기쁨을 나누며 술과 춤 잔치를 벌인다.</p>
+          <a class="btn" href="/">자세히 보기
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><path style="fill:#232326" d="m17.5 5.999-.707.707 5.293 5.293H1v1h21.086l-5.294 5.295.707.707L24 12.499l-6.5-6.5z" data-name="Right"/></svg>
+          </a>
+        </div>
+      </article class="card__header"e>
+      <article class="card">
+        <figure>
+          <img src="/imgTextType/image/겨울.jpg" alt="image"/>
+        </figure>
+        <div class="card__body">
+          <h3 class="tit">겨울</h3>
+          <p class="desc ellipsis">얼어붙을 듯이 차가운 겨울. 산과 들은 눈으로 뒤덮이고 바람은 나뭇가지를 잡아 흔든다. 난로가에 둘러앉아 즐거운 한 때를 보낸다.</p>
+          <a class="btn" href="/">자세히 보기
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><path style="fill:#232326" d="m17.5 5.999-.707.707 5.293 5.293H1v1h21.086l-5.294 5.295.707.707L24 12.499l-6.5-6.5z" data-name="Right"/></svg>
+          </a>
+        </div>
+      </article>
+    </div>
+  </section>
+</body>
+</html>
