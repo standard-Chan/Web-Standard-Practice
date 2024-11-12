@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banner</title>
+  <style>
+    /* fonts */
+    @import url('https://fonts.googleapis.com/css?family=Jua:400');
+
+    .font {
+      font-family: 'Jua', sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    
+    /* init */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .blind {
+      width: 0;
+      height: 0;
+      line-height: 0;
+      overflow: hidden;
+      position: absolute;
+      text-indent: -9999px;
+    }
+
+    a{
+      text-decoration: none;
+    }
+    /* banner type */
+    .banner__wrap {
+      background-color: #ccc;
+      width: 100%;
+      height: 500px;
+    }
+    .banner__inner {
+      background-image: url(/bannerType/image/여름.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 0px 0px;
+    }
+    .container {
+      width: 1160px;
+      padding: 90px 0px;
+      text-align: center;
+      margin: 0 auto;
+    }
+    .banner__inner .title {
+      letter-spacing: 5px;
+      font-size: 70px;
+      font-weight: 500;
+      line-height: 1.2;
+      margin-bottom: 70px;
+      color: rgb(41, 83, 6);
+    }
+    .banner__inner .desc {
+      font-size: 24px;
+      margin-bottom: 70px;
+      font-weight: 200;
+      line-height: 1.5;
+    }
+    .banner__inner .desc a {
+      display: block;
+      color: rgb(63, 79, 50);
+    }
+    .banner__inner .small {
+      font-size: 20px;
+      font-weight: 300;
+      letter-spacing: 2px;
+      text-decoration: underline;
+      color: #e3e3e3;
+    }
+  </style>
+</head>
+<body>
+  <section id="bannerType" class="banner__wrap font">
+    <h2 class="blind">배너 영역</h2>
+    <div class="banner__inner">
+      <div class="container">
+        <h3 class="title">숭실대학교</h3>
+        <p class="desc">
+          숭실대학교 홈페이지 바로가기
+          <a href="/">https://ssu.ac.kr/</a>
+        </p>
+        <span class="small">배너 유형1</span>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

@@ -67,7 +67,12 @@ type4
  <img src="./imgTextType/image/image.png" height="150" style="display : inline"/>
 
  ### type2
+
  <img src="./imgTextType/image/image2.png" height="150" style="display : inline"/>
 
  - html 가독성 있게 구조화
  - svg
+
+## Banner
+
+<img src="./bannerType/image/image.png" height="150" style="display : inline"/>
