@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text</title>
+  <style>
+    /* fonts */
+    @import url('https://fonts.googleapis.com/css?family=Jua:400');
+
+    .font {
+      font-family: 'Jua', sans-serif;
+      font-weight: 300;
+      font-style: normal;
+    }
+    /* init */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    /* common */
+    .container {
+      width: 1160px;
+      margin: 0 auto;
+    }
+    .section{
+      padding: 120px;
+    }
+
+    .section h2 {
+      font-size: 50px;
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    .section span {
+      display: block;
+      text-align: center;
+      font-size: 16px;
+      text-decoration-line: underline;
+    }
+    .text__inner {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .text {
+      width: 32%;
+      background-color: #f5f5f5;
+      margin-bottom: 1%;
+      padding: 20px;
+      box-sizing: border-box;
+      border-radius: 10px;
+      position: relative;
+    }
+    .text__title {
+      padding-top: 70px;
+      font-size: 24px;
+      font-weight: 400;
+      margin-bottom: 16px;
+      line-height: 1;
+    }
+    .text__title::before {
+      position: absolute;
+      content: '';
+      top: 15px;
+      left: 20px;
+      width: 60px;
+      height: 60px;
+      background-image: url(/textType/img/icon1.png);
+      background-position: center;
+      background-size: cover;
+      border-radius: 50px;
+      filter: blur(0.8px);
+    }
+    .text__desc {
+      color: #666;
+      font-size: 18px;
+      line-height: 1.4;
+      margin-bottom: 5px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    } 
+    .text__btn {
+      font-size: 16px;
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+  <section id="textType" class="text__wrap container section">
+    <span>유형</span>
+    <h2>HTML text 연습</h2>
+    <div class="text__inner">
+      <div class="text">
+        <h3 class="text__title">연결구과</h3>
+        <p class="text__desc">캠릿브지 대학의 연결구과에 따르면, 한 단어 안에서 글자가 어떤 순서로 배되열어 있지는 중요하지 않고, 첫 번째와 마지막 글자가 올바른 위치에 있는 것이 중다요하고 한다. 나머지 글들자은 완전히 엉진망창의 순서로 되어 있라을지도 당신은 아무 문제 없이 이것을 읽을 수 있다. 왜하냐면, 인간의 두뇌는 모든 글자를 하하나나 읽는 것이 아니라 단어 하나를 전체로 인하식기 때이문다.</p>
+        <a class="text__btn" href="/">더보기</a>
+      </div>
+      <div class="text">
+        <h3 class="text__title">대통령</h3>
+        <p class="text__desc">대통령은 국가의 원수이며. 국회는 국정을 감사하거나 특정한 국정사안에 대하여 조사할 수 있으며. 종교와 정치는 분리된다, 그 임기는 4년으로 한다.</p>
+        <a class="text__btn" href="/">더보기</a>
+      </div>
+      <div class="text">
+        <h3 class="text__title">캠릿브지</h3>
+        <p class="text__desc">캠릿브지 대학의 연결구과에 따르면, 한 단어 안에서 글자가 어떤 순서로 배되열어 있지는 중요하지 않고, 첫 번째와 마지막 글자가 올바른 위치에 있는 것이 중다요하고 한다. 나머지 글들자은 완전히 엉진망창의 순서로 되어 있라을지도 당신은 아무 문제 없이 이것을 읽을 수 있다. 왜하냐면, 인간의 두뇌는 모든 글자를 하하나나 읽는 것이 아니라 단어 하나를 전체로 인하식기 때이문다.</p>
+        <a class="text__btn" href="/">더보기</a>
+      </div>
+      <div class="text">
+        <h3 class="text__title">아무말</h3>
+        <p class="text__desc">국회는 헌법 또는 법률에 특별한 규정이 없는 한 재적의원 과반수의 출석과 출석의원 과반수의 찬성으로 의결한다. 주권의 제약에 관한 조약. 헌법재판소 재판관은 정당에 가입하거나 정치에 관여할 수 없다. 누구든지 체포 또는 구속의 이유와 변호인의 조력을 받을 권리가 있음을 고지받지 아니하고는 체포 또는 구속을 당하지 아니한다.</p>
+        <a class="text__btn" href="/">더보기</a>
+      </div>
+      <div class="text">
+        <h3 class="text__title">공공복리</h3>
+        <p class="text__desc">국민의 모든 자유와 권리는 국가안전보장·질서유지 또는 공공복리를 위하여 필요한 경우에 한하여 법률로써 제한할 수 있으며. 외국에 대하여 국가를 대표한다. 제3항의 승인을 얻지 못한 때에는 그 처분 또는 명령은 그때부터 효력을 상실한다, 제한하는 경우에도 자유와 권리의 본질적인 내용을 침해할 수 없다.</p>
+        <a class="text__btn" href="/">더보기</a>
+      </div>
+      <div class="text">
+        <h3 class="text__title">국무회의</h3>
+        <p class="text__desc">국무회의는 대통령·국무총리와 15인 이상 30인 이하의 국무위원으로 구성한다. 재판의 전심절차로서 행정심판을 할 수 있다. 법률이 정하는 바에 의하여 연임할 수 있다, 제안된 헌법개정안은 대통령이 20일 이상의 기간 이를 공고하여야 한다.</p>
+        <a class="text__btn" href="/">더보기</a>
+      </div>
+    </div>
+
+  </section>
+</body>
+</html>

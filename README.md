@@ -76,3 +76,7 @@ type4
 ## Banner
 
 <img src="./bannerType/image/image.png" height="150" style="display : inline"/>
+
+## Text
+
+<img src="./textType/img/image.png" height="150" style="display : inline"/>
