@@ -80,3 +80,7 @@ type4
 ## Text
 
 <img src="./textType/img/image.png" height="150" style="display : inline"/>
+
+## footer
+
+<img src="./footerType/img/image.png" height="150" style="display : inline"/>

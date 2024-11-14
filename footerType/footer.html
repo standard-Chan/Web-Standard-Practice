@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footer</title>
+  <style>
+    /* fonts */
+    @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding:400');
+
+    .font {
+      font-family: 'Nanum Gothic Coding';
+      font-style: normal;
+      font-weight: 300;
+      line-height: 1.4;
+    }
+    /* init */
+    * {
+      margin: 0 auto;
+      padding: 0;
+    }
+    .blind {
+      width: 0;
+      line-height: 0;
+      height: 0;
+      overflow: hidden;
+      text-indent: -9999px;
+    }
+    .container {
+      margin: 0 auto;
+      width: 1160px;
+      padding: 0 20px;
+    }
+    .section {
+      padding: 80px 0px;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    li {
+      list-style: none;
+    }
+    h2 h3 {
+      font-weight: normal;
+    }
+    /* menu */
+    .footer_warp {
+    }
+    .footer__menu {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 70px;
+      padding: 10px;
+    }
+    .footer__menu .menu {
+      width: 16%;
+    }
+    .footer__menu .title{
+      font-size: 30px;
+      font-weight: 300px;
+      margin-bottom: 10px;
+    }
+    .menu ul li a {
+      font-size: 17px;
+    }
+    .footer__right {
+      border-top: 1px solid #d9d9d9;
+      padding-top: 40px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <section id="footer" class="footer_warp font section">
+    <h2 class="blind">footer</h2>
+    <div class="footer__inner container">
+      <div class="footer__menu">
+        <div class="menu">
+          <h3 class="title">사이트</h3>
+          <ul>
+            <li><a href="">website</a></li>
+          </ul>
+        </div>
+        <div class="menu">
+          <h3 class="title">레이아웃</h3>
+          <ul>
+            <li><a href="">web</a></li>
+            <li><a href="">반응</a></li>
+            <li><a href="">패럴랙스</a></li>
+          </ul>
+        </div>
+        <div class="menu">
+          <h3 class="title">메뉴</h3>
+          <ul>
+            <li><a href="">메뉴 유형1</a></li>
+            <li><a href="">메뉴 유형2</a></li>
+          </ul>
+        </div>
+        <div class="menu">
+          <h3 class="title">슬라이드</h3>
+          <ul>
+            <li><a href="">슬라이드 유형1</a></li>
+            <li><a href="">슬라이드 유형2</a></li>
+          </ul>
+        </div>
+        <div class="menu">
+          <h3 class="title">푸터 유형</h3>
+          <ul>
+            <li><a href="">푸터 컨텐츠</a></li>
+            <li><a href="">푸터 이미지</a></li>
+          </ul>
+        </div>
+        <div class="menu">
+          <h3 class="title">이미지</h3>
+          <ul>
+            <li><a href="">카드 유형1</a></li>
+            <li><a href="">카드 유형2</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__right">
+        <h3>2024 HTML practice<br/>All right reserved</h3>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
