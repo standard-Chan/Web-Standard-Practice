@@ -9,12 +9,12 @@
   - [x] Type3
 - [x] Header
 - [x] Slide
-- [ ] Image
-- [ ] Image/Text
-- [ ] Card
-- [ ] Banner
-- [ ] Text
-- [ ] Footer
+- [x] Image
+- [x] Image/Text
+- [x] Card
+- [x] Banner
+- [x] Text
+- [x] Footer
 
 ## Layout
 학습요소
